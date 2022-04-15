@@ -34,10 +34,7 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    <link
-                        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
-                        rel="stylesheet"
-                    />
+                    <link href="/fonts/Industry-Medium.woff2" as="font" />
                 </Head>
                 <body>
                     <Main />

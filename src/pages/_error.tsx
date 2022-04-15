@@ -1,11 +1,8 @@
 import React from 'react';
 
-import * as Sentry from '@sentry/react';
 import Error from 'next/error';
 
 const ErrorPage = ({ error }) => {
-    Sentry.captureException(error);
-
     if (error?.errorCode) {
         return <Error statusCode={error.errorCode} title={error.errorMessage} />;
     }
