@@ -3,6 +3,6 @@ export interface ICurrentItem {
     label: string;
     type?: 'group' | undefined;
     count?: number;
-    value?: boolean;
+    value: boolean;
     items?: ICurrentItem[];
 }
