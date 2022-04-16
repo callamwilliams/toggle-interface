@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
     return (
         <Formik initialValues={defaultValues} onSubmit={onSubmit}>
             {({ handleSubmit, values }) => (
-                <Wrapper onSubmit={handleSubmit} className="advanced-form">
+                <Wrapper id="form" onSubmit={handleSubmit} className="advanced-form">
                     {Object.entries(schema)?.map(([key, value], index) => (
                         <Block key={`section_${key}`} tabIndex={index}>
                             <h3>{key}</h3>
@@ -35,7 +35,9 @@ const HomePage: React.FC = () => {
 
                     <Portal selector="#sidebar">
                         <pre>{JSON.stringify(values, null, 2)}</pre>
-                        <Button type="submit">Reset to default values</Button>
+                        <Button type="submit" form="form">
+                            Reset to default values
+                        </Button>
                     </Portal>
                 </Wrapper>
             )}
