@@ -2,6 +2,10 @@ import React from 'react';
 
 import { Wrapper } from './styles';
 
-const SideBar: React.FC = ({ children }) => <Wrapper>{children}</Wrapper>;
+interface SideBarProps {
+    menu: boolean;
+}
+
+const SideBar: React.FC<SideBarProps> = ({ children, menu }) => <Wrapper menu={menu}>{children}</Wrapper>;
 
 export default SideBar;

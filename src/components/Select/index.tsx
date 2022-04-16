@@ -4,7 +4,7 @@ import { Wrapper } from './styles';
 
 const Select: React.FC<InputHTMLAttributes<HTMLSelectElement>> = ({ ...props }) => (
     <Wrapper>
-        <select {...props}>
+        <select data-testid="select" {...props}>
             {[...Array(10).keys()]
                 .sort((a, b) => b - a)
                 .map((number) => (

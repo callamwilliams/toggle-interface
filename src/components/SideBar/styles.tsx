@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ menu: boolean }>`
     position: fixed;
     bottom: 0;
     left: 0;
@@ -8,13 +8,12 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
-    height: 13.75rem;
+    height: ${({ menu }) => (menu ? '100vh' : '0')};
     width: 100%;
     overflow: auto;
     background: #242f3f;
     font-size: 0.8125rem;
     line-height: 1rem;
-    padding: 1rem;
 
     #sidebar {
         height: 100%;
@@ -23,6 +22,7 @@ export const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        padding: 5rem 0 1rem;
     }
 
     @media (min-width: 48rem) {

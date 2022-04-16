@@ -6,6 +6,9 @@ export const Header = styled.header`
     right: 0;
     left: 0;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 3.75rem;
     background: #002a54;
@@ -43,4 +46,22 @@ export const Button = styled.button`
     border-radius: 0.625rem;
     text-transform: uppercase;
     cursor: pointer;
+`;
+
+export const MenuButton = styled.button`
+    padding: 0.25rem 1rem;
+    background: #0d0d0f;
+    border: 1px solid #fff;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
+    margin-right: 1rem;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    @media (min-width: 48rem) {
+        display: none;
+    }
 `;
