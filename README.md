@@ -1,30 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+```bash
+npm i
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
+```
+
+```bash
+npm run test
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Considerations
+- Made a basic assumption about data structure, and structured it based on what I would expect from a typical API response.
+- Used Formik to keep form state manageable.
+- Chose to use a portal for the SideBar to pass form state out to the _app level, could have used global state (redux) for this, or refactored to bring Formik to the _app level.
 
-## Learn More
+## Overview
+- Fully responsive
+- Mobile first
+- 99.48% Test Coverage
 
-To learn more about Next.js, take a look at the following resources:
+<img width="800" alt="desktop" src="https://user-images.githubusercontent.com/1899003/163673999-9bf4cb5b-6427-4979-a46f-f1cf34fc450e.png">
+<img width="400" src="https://user-images.githubusercontent.com/1899003/163673758-daecad62-efc8-4841-ba48-422010fb5de1.png" alt="mobile" />
+<img width="400" src="https://user-images.githubusercontent.com/1899003/163674016-fa2efbad-8c67-4765-8f22-481cc885db09.png" alt="tablet" />
+<img width="600" alt="Screenshot 2022-04-16 at 12 46 07" src="https://user-images.githubusercontent.com/1899003/163673763-6acc4a77-987b-45da-8fc1-cf407255c201.png">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

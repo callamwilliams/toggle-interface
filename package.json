@@ -68,8 +68,6 @@
     "dependencies": {
         "formik": "^2.2.9",
         "jsdom": "^19.0.0",
-        "json-schema": "^0.4.0",
-        "just-kebab-case": "^4.0.1",
         "next": "^12.1.4",
         "next-transpile-modules": "^9.0.0",
         "normalize.css": "^8.0.1",

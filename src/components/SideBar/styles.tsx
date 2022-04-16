@@ -23,6 +23,10 @@ export const Wrapper = styled.div<{ menu: boolean }>`
         align-items: center;
         justify-content: space-between;
         padding: 5rem 0 1rem;
+
+        @media (min-width: 48rem) {
+            padding: 2rem 0 1rem;
+        }
     }
 
     @media (min-width: 48rem) {
