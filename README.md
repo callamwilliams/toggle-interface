@@ -15,7 +15,7 @@ npm run test
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Considerations
-- Made a basic assumption about data structure, and structured it based on what I would expect from a typical API response.
+- Made a basic assumption about data structure, and based it on what I would expect from a typical API response.
 - Used Formik to keep form state manageable.
 - Chose to use a portal for the SideBar to pass form state out to the _app level to save time.
 
